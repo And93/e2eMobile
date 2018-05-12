@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "module": "commonjs",
+    "strict": true,
+    "noImplicitAny": true,
+    "jsx": "preserve",
+    "suppressImplicitAnyIndexErrors": false,
+    "sourceMap": true,
+    "outDir": "./target",
+    "baseUrl": ".",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "strictNullChecks": false,
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "noUnusedParameters": false,
+    "lib": ["dom", "es2015", "es2016", "es2017"],
+    "typeRoots": ["./node_modules/@types"],
+    "paths": {
+      "*": [ "./*" ],
+      "src/*": ["./src/*"]
+    }
+  },
+  "include": [
+    "./src/**/*.ts"
+  ]
+}

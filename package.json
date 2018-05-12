@@ -1,0 +1,25 @@
+{
+  "name": "e2eMobile",
+  "version": "1.0.0",
+  "scripts": {
+    "tsc": "tsc",
+    "test": "wdio"
+  },
+  "dependencies": {
+    "@types/moment": "2.13.0",
+    "@types/mocha": "5.2.0",
+    "@types/webdriverio": "4.10.1",
+    "appium": "1.8.0",
+    "moment": "2.22.1",
+    "mocha": "5.1.1",
+    "ts-node": "6.0.3",
+    "tsconfig-paths": "3.3.2",
+    "tslint": "5.10.0",
+    "typescript": "2.8.3",
+    "wdio-appium-service": "0.2.3",
+    "wdio-dot-reporter": "0.0.9",
+    "wdio-mocha-framework": "0.5.13",
+    "wdio-selenium-standalone-service": "0.0.10",
+    "webdriverio": "4.12.0"
+  }
+}
