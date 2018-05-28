@@ -7,7 +7,12 @@ In this repository is code of autotest of some Android application
 
 
 ## Stack
-JavaScript (TypeScript) - NodeJs - Selenium - Mocha - Webdriver.io - Appium;
+JavaScript ([TypeScript] (https://www.typescriptlang.org/)) -
+ [NodeJs] (https://nodejs.org/en/) -
+ [Selenium] (https://www.seleniumhq.org/) -
+ [Mocha] (https://mochajs.org/) -
+ [Webdriver.io] (http://webdriver.io/) -
+ [Appium] (http://appium.io/);
 
 
 ## Run test
@@ -78,3 +83,8 @@ When you test a mobile application, it is highly likely that you have a problem 
 
 ## How to use mobile selectors with webdriverio
 [Webdriverio and mobile selectors](http://webdriver.io/guide/usage/selectors.html#Mobile-Selectors)
+
+## Another good documentation
+[Appium Tutorial official] (http://appium.io/docs/en/about-appium/intro/)
+[Appium Tutorial v1] (http://toolsqa.com/mobile-automation/appium/appium-tutorial/)
+[Appium Tutorial v2] (http://www.automationtestinghub.com/appium-tutorial/)
