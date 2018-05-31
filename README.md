@@ -9,7 +9,6 @@ In this repository is code of autotest of some Android application
 ## Stack
 JavaScript ([TypeScript] (https://www.typescriptlang.org/)) -
  [NodeJs] (https://nodejs.org/en/) -
- [Selenium] (https://www.seleniumhq.org/) -
  [Mocha] (https://mochajs.org/) -
  [Webdriver.io] (http://webdriver.io/) -
  [Appium] (http://appium.io/);
@@ -32,6 +31,8 @@ npm test
 After install add variable environment **ANDROID_HOME**
 E.g:
 `C:\Users\user\AppData\Local\Android\sdk`
+
+  2.1. [Setup Android Environment Variables] (http://www.automationtestinghub.com/setup-android-environment-variables/)
 
 3. Install [Java JDK] (http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 After install add variable environment **JAVA_HOME** and write the path to the directory **jdk**
@@ -76,6 +77,10 @@ When you test a mobile application, it is highly likely that you have a problem 
 
 2. Read manual about [Appium inspector] (https://github.com/appium/appium-desktop)
 
+Or you may using UIAutomatorViewer.
+
+[How to Locate Element using UIAutomatorViewer] (http://toolsqa.com/mobile-automation/appium/locate-element-using-uiautomatorviewer/)
+
 
 ## Configuration
 [Appium Desired Capabilities] (https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/caps.md)
@@ -88,3 +93,9 @@ When you test a mobile application, it is highly likely that you have a problem 
 [Appium Tutorial official] (http://appium.io/docs/en/about-appium/intro/)
 [Appium Tutorial v1] (http://toolsqa.com/mobile-automation/appium/appium-tutorial/)
 [Appium Tutorial v2] (http://www.automationtestinghub.com/appium-tutorial/)
+
+## Start the Emulator from the Command Line
+[developer.android.com] (https://developer.android.com/studio/run/emulator-commandline)
+[stackoverflow.com] (https://stackoverflow.com/questions/4974568/how-do-i-launch-the-android-emulator-from-the-command-line)
+
+## [ADB Commands] (http://toolsqa.com/mobile-automation/appium/adb-commands/)
