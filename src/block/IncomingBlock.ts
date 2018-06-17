@@ -3,11 +3,13 @@ import {Selector} from "src/helpers/utils/android/Selector";
 
 export class IncomingBlock extends BaseBlock {
 
+    private incomingHeader = Selector.textAndClass("Входящие", this.androidWidgetTextViewClass);
+
     constructor(protected browser: WebdriverIO.Client<void>) {
         super(browser);
     };
 
-    get incomingHeader(): PageElement {
-        return this.browser.$(Selector.textAndClass("Входящие", "android.widget.TextView"));
+    get getIncomingHeader(): PageElement {
+        return this.browser.$(this.incomingHeader);
     };
 }

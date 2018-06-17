@@ -5,34 +5,40 @@ import {PageElement} from "src/block/BaseBlock";
 
 export class LogInPage extends BasePage {
 
+    private accountInput = Selector.contentDisposition("input-login_account");
+    private emailInput = Selector.contentDisposition("input-login_login");
+    private passwordInput = Selector.contentDisposition("input-login_password");
+    private logInButton = Selector.contentDisposition("button_login");
+    private registrationButton = Selector.contentDisposition("button_go_register");
+
     constructor(protected browser: WebdriverIO.Client<void>) {
         super(browser);
     };
 
-    get accountInput(): PageElement {
-        return this.getElement(Selector.contentDisposition("input-login_account"));
+    get getAccountInput(): PageElement {
+        return this.getElement(this.accountInput);
     };
 
-    get emailInput(): PageElement {
-        return this.getElement(Selector.contentDisposition("input-login_login"));
+    get getEmailInput(): PageElement {
+        return this.getElement(this.emailInput);
     };
 
-    get passwordInput(): PageElement {
-        return this.getElement(Selector.contentDisposition("input-login_password"));
+    get getPasswordInput(): PageElement {
+        return this.getElement(this.passwordInput);
     };
 
-    get logInButton(): PageElement {
-        return this.getElement(Selector.contentDisposition("button_login"));
+    get getLogInButton(): PageElement {
+        return this.getElement(this.logInButton);
     };
 
-    get registrationButton(): PageElement {
-        return this.getElement(Selector.contentDisposition("button_go_register"));
+    get getRegistrationButton(): PageElement {
+        return this.getElement(this.registrationButton);
     };
 
     public fillLogInForm(employee: Employee) {
-        this.accountInput.setValue(employee.account);
-        this.emailInput.setValue(employee.login);
-        this.passwordInput.setValue(employee.password);
+        this.getAccountInput.setValue(employee.account);
+        this.getEmailInput.setValue(employee.login);
+        this.getPasswordInput.setValue(employee.password);
         this.browser.back();
     };
 }

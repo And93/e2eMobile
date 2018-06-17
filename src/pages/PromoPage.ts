@@ -4,15 +4,18 @@ import {PageElement} from "src/block/BaseBlock";
 
 export class PromoPage extends BasePage {
 
+    private nextButton = Selector.textAndClass("ДАЛЕЕ", this.androidWidgetTextViewClass);
+    private startButton = Selector.textAndClass("НАЧАТЬ", this.androidWidgetTextViewClass);
+
     constructor(protected browser: WebdriverIO.Client<void>) {
         super(browser);
     };
 
-    get nextButton(): PageElement {
-        return this.getElement(Selector.textAndClass("ДАЛЕЕ", "android.widget.TextView"));
+    get getNextButton(): PageElement {
+        return this.getElement(this.nextButton);
     };
 
-    get startButton(): PageElement {
-        return this.getElement(Selector.textAndClass("НАЧАТЬ", "android.widget.TextView"));
+    get getStartButton(): PageElement {
+        return this.getElement(this.startButton);
     };
 }

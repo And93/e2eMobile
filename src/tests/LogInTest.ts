@@ -12,12 +12,12 @@ describe("LogInTest", function () {
     it("should logIn in application", function () {
 
         logInPage.fillLogInForm(EmployeeSample);
-        logInPage.logInButton.click();
+        logInPage.getLogInButton.click();
 
-        promoPage.nextButton.click();
-        promoPage.nextButton.click();
-        promoPage.startButton.click();
+        promoPage.getNextButton.click();
+        promoPage.getNextButton.click();
+        promoPage.getStartButton.click();
 
-        applicationPage.incomingBlock.incomingHeader.waitForVisible();
+        applicationPage.incomingBlock.getIncomingHeader.waitForVisible();
     });
 });

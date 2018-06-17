@@ -13,14 +13,14 @@ describe("RegistrationTest", function () {
 
     it("should registration account", function () {
 
-        logInPage.registrationButton.click();
+        logInPage.getRegistrationButton.click();
         registrationPage.fillRegistrationForm(RegistrationSample);
-        registrationPage.comeInInput.click();
+        registrationPage.getComeInInput.click();
 
-        promoPage.nextButton.click();
-        promoPage.nextButton.click();
-        promoPage.startButton.click();
+        promoPage.getNextButton.click();
+        promoPage.getNextButton.click();
+        promoPage.getStartButton.click();
 
-        applicationPage.incomingBlock.incomingHeader.waitForVisible();
+        applicationPage.incomingBlock.getIncomingHeader.waitForVisible();
     });
 });

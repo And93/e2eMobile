@@ -7,41 +7,51 @@ import {PageElement} from "src/block/BaseBlock";
 
 export class RegistrationPage extends BasePage {
 
+    private emailInput = Selector.textAndClass("Эл. почта", this.androidWidgetEditTextClass);
+    private nameInput = Selector.textAndClass("Имя Фамилия", this.androidWidgetEditTextClass);
+    private phoneInput = Selector.indexAndClass(7, this.androidWidgetEditTextClass);
+    private registrationButton = Selector.contentDisposition("button_register");
+    private smsInput = Selector.textAndClass("Код из СМС", this.androidWidgetEditTextClass);
+    private comeInInput = Selector.textAndClass("ВОЙТИ", this.androidWidgetTextViewClass);
+    private invalidEmailValidationMessage = Selector.textAndClass("Укажите корректный Email", this.androidWidgetTextViewClass);
+    private repeatEmailValidationMessage =
+        Selector.textAndClass("Аккаунт с такой электропочтой уже зарегистрирован", this.androidWidgetTextViewClass);
+
     constructor(protected browser: WebdriverIO.Client<void>) {
         super(browser);
     };
 
-    get emailInput(): PageElement {
-        return this.getElement(Selector.textAndClass("Эл. почта", "android.widget.EditText"));
+    get getEmailInput(): PageElement {
+        return this.getElement(this.emailInput);
     };
 
-    get nameInput() {
-        return this.getElement(Selector.textAndClass("Имя Фамилия", "android.widget.EditText"));
+    get getNameInput() {
+        return this.getElement(this.nameInput);
     };
 
-    get phoneInput(): PageElement {
-        return this.getElement(Selector.indexAndClass(7, "android.widget.EditText"));
+    get getPhoneInput(): PageElement {
+        return this.getElement(this.phoneInput);
     };
 
-    get registrationButton(): PageElement {
-        return this.getElement(Selector.contentDisposition("button_register"));
+    get getRegistrationButton(): PageElement {
+        return this.getElement(this.registrationButton);
     };
 
-    get smsInput(): PageElement {
-        return this.getElement(Selector.textAndClass("Код из СМС", "android.widget.EditText"));
+    get getSmsInput(): PageElement {
+        return this.getElement(this.smsInput);
     };
 
-    get comeInInput(): PageElement {
-        return this.getElement(Selector.textAndClass("ВОЙТИ", "android.widget.TextView"))
+    get getComeInInput(): PageElement {
+        return this.getElement(this.comeInInput)
     }
 
-    get invalidEmailValidationMessage() {
-        return this.browser.$(Selector.textAndClass("Укажите корректный Email", "android.widget.TextView"))
-    }
+    get getInvalidEmailValidationMessage() {
+        return this.browser.$(this.invalidEmailValidationMessage);
+    };
 
-    get repeatEmailValidationMessage() {
-        return this.browser.$(Selector.textAndClass("Аккаунт с такой электропочтой уже зарегистрирован", "android.widget.TextView"))
-    }
+    get getRepeatEmailValidationMessage() {
+        return this.browser.$(this.repeatEmailValidationMessage);
+    };
 
     /**
      * Mock sms data for test
@@ -67,17 +77,17 @@ export class RegistrationPage extends BasePage {
 
     public fillRegistrationForm(data: RegistrationData) {
 
-        this.emailInput.setValue(this.randomEmail);
-        this.nameInput.setValue(data.fullName);
-        this.phoneInput.setValue(data.phone);
+        this.getEmailInput.setValue(this.randomEmail);
+        this.getNameInput.setValue(data.fullName);
+        this.getPhoneInput.setValue(data.phone);
 
-        if (this.invalidEmailValidationMessage.isVisible() || this.repeatEmailValidationMessage.isVisible()) {
-            this.emailInput.setValue(this.randomEmail);
+        if (this.getInvalidEmailValidationMessage.isVisible() || this.getRepeatEmailValidationMessage.isVisible()) {
+            this.getEmailInput.setValue(this.randomEmail);
         }
 
         this.browser.back();
-        this.registrationButton.click();
-        this.smsInput.setValue(this.code);
+        this.getRegistrationButton.click();
+        this.getSmsInput.setValue(this.code);
         this.browser.back();
-    }
+    };
 }
