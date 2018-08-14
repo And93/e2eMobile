@@ -32,7 +32,7 @@ After install add variable environment **ANDROID_HOME**
 E.g:
 `C:\Users\user\AppData\Local\Android\sdk`
 
-  2.1. [Setup Android Environment Variables](http://www.automationtestinghub.com/setup-android-environment-variables/)
+    2.1. [Setup Android Environment Variables](http://www.automationtestinghub.com/setup-android-environment-variables/)
 
 3. Install [Java JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 After install add variable environment **JAVA_HOME** and write the path to the directory **jdk**
@@ -63,11 +63,11 @@ variable **M2** with value `%M2_HOME%\bin` and in **PATH** add `%M2%`
 
 8. If you have any problems during the installation process, please read here:
 
-[first](http://software-testing.ru/forum/index.php?/topic/31885-ustanovka-appium-na-windows10/)
+    [first](http://software-testing.ru/forum/index.php?/topic/31885-ustanovka-appium-na-windows10/)
 
-[second](https://github.com/rhysd/wdio-appium-service/issues/2)
+    [second](https://github.com/rhysd/wdio-appium-service/issues/2)
 
-[third](https://github.com/webdriverio/webdriverio/issues/1569)
+    [third](https://github.com/webdriverio/webdriverio/issues/1569)
 
 
 ## Selectors
