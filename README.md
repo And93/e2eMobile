@@ -33,6 +33,10 @@ E.g:
 `C:\Users\user\AppData\Local\Android\sdk`
 
     2.1. [Setup Android Environment Variables](http://www.automationtestinghub.com/setup-android-environment-variables/)
+    
+    2.2. Add variable environment **ANDROID_AVD_HOME**
+    E.g.:
+    `c:\Users\user\.android\avd\`
 
 3. Install [Java JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 After install add variable environment **JAVA_HOME** and write the path to the directory **jdk**

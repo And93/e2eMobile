@@ -5,4 +5,5 @@ target
 screenshots/**
 app/**
 
+package-lock.json
 /*.log

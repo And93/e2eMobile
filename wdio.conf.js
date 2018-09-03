@@ -5,7 +5,7 @@ const port = 4730;
 
 const timeout = 60000;
 
-const device = 'Nexus 5 API 24 v2';
+const device = 'Nexus_5_API_24';
 const platform = 'android';
 const version = '7.0';
 
@@ -25,7 +25,8 @@ exports.config = {
     capabilities: [
         {
             browserName: '',
-            appiumVersion: '1.7.2',
+            appiumVersion: '1.9.0',
+            avd: device,
             deviceName: device,
             platformVersion: version,
             platformName: platform,
