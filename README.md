@@ -7,7 +7,7 @@ In this repository is code of autotest of some Android application
 
 
 ## Stack
-JavaScript ([TypeScript](https://www.typescriptlang.org/)) -
+[JavaScript](https://www.javascript.com/) ([TypeScript](https://www.typescriptlang.org/)) -
  [NodeJs](https://nodejs.org/en/) -
  [Mocha](https://mochajs.org/) -
  [Webdriver.io](http://webdriver.io/) -
