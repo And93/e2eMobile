@@ -7,9 +7,9 @@ const logInPage = new LogInPage(browser),
     promoPage = new PromoPage(browser),
     applicationPage = new ApplicationPage(browser);
 
-describe("LogInTest", function () {
+describe("LogInTest", () => {
 
-    it("should logIn in application", function () {
+    it("should logIn in application", () => {
 
         logInPage.fillLogInForm(EmployeeSample);
         logInPage.getLogInButton.click();

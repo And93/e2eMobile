@@ -9,9 +9,9 @@ const logInPage = new LogInPage(browser),
     promoPage = new PromoPage(browser),
     applicationPage = new ApplicationPage(browser);
 
-describe("RegistrationTest", function () {
+describe("RegistrationTest", () => {
 
-    it("should registration account", function () {
+    it("should registration account", () => {
 
         logInPage.getRegistrationButton.click();
         registrationPage.fillRegistrationForm(RegistrationSample);

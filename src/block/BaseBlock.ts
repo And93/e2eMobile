@@ -10,17 +10,17 @@ export const timeout = {
     xl: 30000,
 };
 
-export class BaseBlock {
+export abstract class BaseBlock {
 
     protected androidWidgetTextViewClass = "android.widget.TextView";
     protected androidWidgetEditTextClass = "android.widget.EditText";
 
-    constructor(protected browser: WebdriverIO.Client<void>) {
+    protected constructor(protected browser: WebdriverIO.Client<void>) {
     }
 
     public getElement(selector: string | PageElement, needVisible: boolean = true): PageElement {
 
-        const element = typeof selector === "string" ? this.browser.$(selector) : selector;
+        const element: PageElement = typeof selector === "string" ? this.browser.$(selector) : selector;
 
         if (!element.isExisting()) {
             element.waitForExist();
