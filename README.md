@@ -7,7 +7,7 @@ In this repository is code of autotest of some Android application
 
 
 ## Stack
-JavaScript ([TypeScript](https://www.typescriptlang.org/)) -
+[JavaScript](https://www.javascript.com/) ([TypeScript](https://www.typescriptlang.org/)) -
  [NodeJs](https://nodejs.org/en/) -
  [Mocha](https://mochajs.org/) -
  [Webdriver.io](http://webdriver.io/) -
@@ -37,6 +37,8 @@ E.g:
     2.2. Add variable environment **ANDROID_AVD_HOME**
     E.g.:
     `c:\Users\user\.android\avd\`
+    
+    2.3. Variable environment for Linux [here](https://gist.github.com/And93/914f8311f26914827ba8ac13b9940fba)
 
 3. Install [Java JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 After install add variable environment **JAVA_HOME** and write the path to the directory **jdk**
