@@ -34,11 +34,11 @@ E.g:
 
     2.1. [Setup Android Environment Variables](http://www.automationtestinghub.com/setup-android-environment-variables/)
     
-    2.2. Add variable environment **ANDROID_AVD_HOME**
+    2.2. Add the variable environment **ANDROID_AVD_HOME**
     E.g.:
-    `c:\Users\user\.android\avd\`
+    `C:\Users\user\.android\avd\`
     
-    2.3. Variable environment for Linux [here](https://gist.github.com/And93/914f8311f26914827ba8ac13b9940fba)
+    2.3. Variables of environment for Windows/Linux [here](https://gist.github.com/And93/914f8311f26914827ba8ac13b9940fba)
 
 3. Install [Java JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 After install add variable environment **JAVA_HOME** and write the path to the directory **jdk**
@@ -48,18 +48,18 @@ E.g.:
 4. Download [Apache Ant](http://ant.apache.org/bindownload.cgi)
 It does not require installation, just unpack the archive
 E.g.:
-`C:\Users\user\apache-ant-1.9.6`
+`C:\Program Files\apache-ant-1.9.6`
 
 After unpack add variable environment **PATH**, where is **ant**
 E.g.:
-`C:\Users\user\apache-ant-1.9.6\bin`
+`C:\Program Files\apache-ant-1.9.6\bin`
 
 5. Install [Apache Maven](https://maven.apache.org/download.cgi)
 It does not require installation, just unpack the archive
 E.g.:
-`C:\Users\user\apache-maven-3.3.3`
+`C:\Program Files\apache-maven-3.3.3`
 
-After unpack add variable environment **M2HOME** with value `C:\Users\user\apache-maven-3.3.3`,
+After unpack add variable environment **M2HOME** with value `C:\Program Files\apache-maven-3.3.3`,
 variable **M2** with value `%M2_HOME%\bin` and in **PATH** add `%M2%`
 
 6. The mobile application can be here
@@ -98,19 +98,21 @@ Or you may using UIAutomatorViewer.
 ## How to use mobile selectors with webdriverio
 [Webdriverio and mobile selectors](http://webdriver.io/guide/usage/selectors.html#Mobile-Selectors)
 
-## Another good documentation
-[Appium Tutorial official](http://appium.io/docs/en/about-appium/intro/)
+
+## Documentation
+[Appium Tutorial (official)](http://appium.io/docs/en/about-appium/intro/)
 
 [Appium Tutorial v1](http://toolsqa.com/mobile-automation/appium/appium-tutorial/)
 
 [Appium Tutorial v2](http://www.automationtestinghub.com/appium-tutorial/)
 
-## Start the Emulator from the Command Line
-[developer.android.com](https://developer.android.com/studio/run/emulator-commandline)
+[Emulator-commandline](https://developer.android.com/studio/run/emulator-commandline)
 
-[stackoverflow.com](https://stackoverflow.com/questions/4974568/how-do-i-launch-the-android-emulator-from-the-command-line)
+[Start the Emulator from the Command Line](https://stackoverflow.com/questions/4974568/how-do-i-launch-the-android-emulator-from-the-command-line)
 
-## [ADB Commands](http://toolsqa.com/mobile-automation/appium/adb-commands/)
+[Stop the Emulator from the Command Line](https://stackoverflow.com/questions/20155376/android-stop-emulator-from-command-line)
+
+[ADB Commands](http://toolsqa.com/mobile-automation/appium/adb-commands/)
 
 ## Docker
 More information [here](https://github.com/butomo1989/docker-android)
