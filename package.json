@@ -5,7 +5,7 @@
     "killer": "killer.bat",
     "pretest": "tslint -p tsconfig.json",
     "wdio": "wdio",
-    "test": "run-p pretest killer wdio killer"
+    "test": "run-s pretest killer wdio killer"
   },
   "dependencies": {
     "@types/mocha": "5.2.5",
